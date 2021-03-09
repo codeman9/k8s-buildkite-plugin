@@ -12,4 +12,5 @@ if [[ -d /local ]]; then
   cp /usr/local/bin/buildkite-agent /local/
 fi
 
+/usr/local/bin/kubectl version
 exec /usr/local/bin/buildkite-agent "$@"
